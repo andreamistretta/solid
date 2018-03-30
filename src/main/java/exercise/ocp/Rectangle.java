@@ -1,6 +1,6 @@
 package exercise.ocp;
 
-public class Rectangle {
+public class Rectangle implements Figures{
 
     private final double height;
     private final double width;
@@ -16,5 +16,10 @@ public class Rectangle {
 
     public double getWidth() {
         return width;
+    }
+
+    public double Area(){
+        return this.width * this.height;
+
     }
 }
